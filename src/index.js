@@ -7,7 +7,7 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={e => e.target.innerText = e.target.innerText.replace("just","so")} />
   </div>,
   document.getElementById('root')
 );
